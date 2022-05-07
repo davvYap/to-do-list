@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="to_do.css" />
+    <title>To-do-list</title>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">DAVV</div> 
+        <ul class="nav">
+          <li><a href="#"> To do list</a></li>
+          <li><a href="index.html" target="_blank"> Simple Notes</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div>
+          <h2>Welcome to your own To-Do-List.</h2>
+          <p>Writing your daily tasks on a list can help you increase productivity and decrease stress. To-do lists enable you to segment your goals into achievable activities and complete large projects by breaking them into smaller assignments. Recording tasks can allow you to better manage your time and encourages you to achieve more throughout your day.</p>
+          <div class="author">
+            <p>By Indeed Editorial Team</p>
+          </div>
+        </div>
+        <img src="to-do-img.png" alt=""/>
+      </div>
+    </header>
+    
+    <section class="boxes">
+      <div class="big-container">
+        <div class="left-container">
+          <div class="box">
+            <p>Date:</p><input type="date" class="date item"/>
+          </div>
+    
+          <div class="box">
+            <p>Title:</p><input type="text" class="title item" />
+          </div>
+    
+          <div class="box">
+            <P>Task:</P>
+            <textarea
+            class="content item"
+            required
+            placeholder="Descibe your task"
+            oninput='this.style.height="";this.style.height=this.scrollHeight + 3 + "px"'
+            ></textarea>
+              <button class="btn item">Submit</button>
+          </div>
+        </div>
+
+        
+        <div class="right-container">
+          <div class="box">
+            <h2>Finish the projects.</h2>
+          <div class="box">
+            <p>To complete 10 Javascript Projects by the year of 2022.</p>
+          </div class="box">  
+            <button class="close-notes btn">&times;</button>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>  
+   
+    <div class="overlay hidden"></div>
+
+    <script src="to_do.js"></script>
+  </body>
+</html>
