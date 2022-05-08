@@ -35,36 +35,48 @@
       <div class="big-container">
         <div class="left-container">
           <div class="box">
-            <p>Date:</p><input type="date" class="date item"/>
+            <p>Date:</p><input type="date" class="date item" id="date"/>
           </div>
     
           <div class="box">
-            <p>Title:</p><input type="text" class="title item" />
+            <p>Title:</p><input type="text" class="title item" id="title" />
           </div>
     
           <div class="box">
             <P>Task:</P>
             <textarea
             class="content item"
+            id="content"
             required
             placeholder="Descibe your task"
             oninput='this.style.height="";this.style.height=this.scrollHeight + 3 + "px"'
             ></textarea>
-              <button class="btn item">Submit</button>
+              <button class="create btn item" id="submit">Submit</button>
           </div>
         </div>
 
         
         <div class="right-container">
-          <div class="box">
-            <h2>Finish the projects.</h2>
-          <div class="box">
-            <p>To complete 10 Javascript Projects by the year of 2022.</p>
-          </div class="box">  
-            <button class="close-notes btn">&times;</button>
+          <div class="list box">
+            <p class="date">Date created: 2022-05-07</p>
+          <!-- <div class="box"> -->
+            <h2 class="title" >Finish the projects.</h2>
+          <!-- <div class="box"> -->
+            <p class="task">To complete 10 Javascript Projects by the year of 2022.
+            </p>
+          <!-- </div class="box">   -->
+            <button class="close btn">Done</button>
           </div>
+          
+          <!-- <div class="list box">
+            <p class="date">Date created: 2022-05-08</p>
+            <h2 class="title" >Do the housechores.</h2>
+            <p class="task">Including laundry, sweeping & mopping.
+            </p>
+            <button class="close btn">x</button>
+          </div>  -->
+          
         </div>
-        
 
       </div>
     </section>  
