@@ -30,17 +30,6 @@ ul {
 }
 
 /*FLEX-CONTAINER*/
-.left-container {
-  height: 60rem;
-  display: flex;
-  justify-content: space-around;
-  background-color: #45b671;
-  flex-direction: column;
-  align-items: flex-start;
-  background: none;
-  margin-left: 3rem;
-  /* flex-wrap: wrap; */
-}
 
 .navbar {
   background: rgb(39, 113, 67);
@@ -96,7 +85,7 @@ ul {
 
 .header p {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 100px;
   line-height: 1.5;
   max-width: 800px;
 }
@@ -122,6 +111,18 @@ ul {
 
 .author p {
   font-size: 1.5rem;
+}
+
+.left-container {
+  height: 60rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #45b671;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  margin-left: 3rem;
+  /* flex-wrap: wrap; */
 }
 
 .boxes .left-container {

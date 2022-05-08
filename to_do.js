@@ -7,6 +7,7 @@ const titleEl = document.querySelector('#title');
 const taskEl = document.querySelector('#content');
 const addListEl = document.querySelector('.right-container');
 const changeUser = document.querySelector('.logo');
+const listNum = document.querySelectorAll('.list');
 
 // Add functionality for remove button for existing template
 const delList = function () {
@@ -61,6 +62,7 @@ const newList = function () {
     titleEl.value = '';
     taskEl.value = '';
   }
+  console.log(listNum);
 };
 
 createEl.addEventListener('click', newList);
@@ -77,6 +79,7 @@ changeUser.addEventListener('click', function () {
   }
 });
 
+// console.log(listNum);
 // To add functionality for 'Submit' btn
 // const newList = function (id) {
 //   console.log(dateEl.value);
